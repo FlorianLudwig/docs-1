@@ -47,9 +47,16 @@ For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https:
 
 The chart is fully configurable, but here we are using the default configuration.
 
+Using helm 2:
 
 ```
 helm install stable/nginx-ingress
+```
+
+With helm 3:
+```
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm install my-release ingress-nginx/ingress-nginx
 ```
 
 The installing processus will begin:
